@@ -1,5 +1,13 @@
-const text = document.querySelector("p")
-text.innerHTML = text.innerText.split("").map((letter, i) => `<span style="transform:rotate(${i*8.9}deg)">${letter}</span>`).join("")
+// const text = document.querySelector("p")
+// text.innerHTML = text.innerText.split("").map((letter, i) => `<span style="transform:rotate(${i*8.9}deg)">${letter}</span>`).join("")
+//////
+
+
+
+
+
+
+
 
 const tl1 = gsap.timeline()
 tl1.from(".logo, .nav", {
@@ -33,7 +41,7 @@ tl1.from(".japan", {
 })
 tl1.from(".mainRightBox > div", {
   stagger: 0.3,
-  x: 300,
+  y: -300,
   opacity: 0
 })
 tl1.from(".footer", {
@@ -64,3 +72,7 @@ tl.to(video, {
 button.addEventListener("click", () => {
   tl.play()
 })
+/////////////////////////////////////
+
+const text = document.querySelector("p")
+text.innerHTML = text.innerText.split("").map((letter, i) => `<span style="transform:rotate(${i*8.9}deg)">${letter}</span>`).join("")
